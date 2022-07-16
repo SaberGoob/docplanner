@@ -16,6 +16,7 @@
  </head>
  <body>
    <nav class="navbar">
+    <div class="navc">
      <!-- LOGO -->
      <div class="logo"><img src="image/logo.svg" width="37%"></div>
      <!-- NAVIGATION MENU -->
@@ -37,6 +38,7 @@
          </li>
        </div>
      </ul>
+    </div>
    </nav>
    <!-- ----------------------------------------------Main --------------------------------------------------->
    <main class="main">
@@ -68,13 +70,22 @@
        <img src="image/icon-patients.svg"class="img1">
        <h1>For patients</h1>
        <p>Find a doctor, book a visit and solve any health-related doubt</p>
-       <select id="country" name="country">
-        <option>Choose country</option>
-        <option value="AU">Australia</option>
-        <option value="IN">India</option>
-        <option value="GB">United Kingdom</option>
-        <option value="US">United States</option>
-    </select>
+       <select data-id="domain-switcher">
+        <option class="text1">Choose country</option>
+                          <option value="http://www.doctoraliar.com">Argentina</option>
+                          <option value="http://www.doctoralia.com.br">Brazil</option>
+                          <option value="http://www.doctoralia.cl">Chile</option>
+                          <option value="http://www.doctoralia.co">Colombia</option>
+                          <option value="http://www.znamylekar.cz">Czech</option>
+                          <option value="http://www.jameda.de">Germany</option>
+                          <option value="http://www.miodottore.it">Italy</option>
+                          <option value="http://www.doctoralia.com.mx">Mexico</option>
+                          <option value="http://www.doctoralia.pe">Peru</option>
+                          <option value="http://www.znanylekarz.pl">Poland</option>
+                          <option value="http://www.doctoralia.com.pt">Portugal</option>
+                          <option value="http://www.doctoralia.es">Spain</option>
+                          <option value="http://www.doktortakvimi.com">Turkey</option>
+                      </select>
       </div>
     </div>
 
@@ -83,13 +94,22 @@
       <img src="image/icon-doctors.svg" class="img2">
       <h1>For doctors</h1>
       <p>Save time managing visits and cut no-shows by half</p>
-      <select id="country" name="country">
-        <option>Choose country</option>
-        <option value="AU">Australia</option>
-        <option value="IN">India</option>
-        <option value="GB">United Kingdom</option>
-        <option value="US">United States</option>
-    </select>
+      <div class="selection"></div>
+      <select data-id="domain-switcher">
+        <option class="text1">Choose country</option>
+                          <option value="https://academy.doctoraliar.com">Argentina</option>
+                          <option value="https://academy.doctoralia.com.br">Brazil</option>
+                          <option value="https://academy.doctoralia.cl">Chile</option>
+                          <option value="https://academy.doctoralia.co">Colombia</option>
+                          <option value="https://lekar.znamylekar.cz">Czech</option>
+                          <option value="https://jameda.de/fuer-aerzte">Germany</option>
+                          <option value="https://dottori.miodottore.it">Italy</option>
+                          <option value="https://academy.doctoralia.com.mx">Mexico</option>
+                          <option value="https://academy.doctoralia.pe">Peru</option>
+                          <option value="https://lekarz.znanylekarz.pl">Poland</option>
+                          <option value="https://academy.doctoralia.es">Spain</option>
+                          <option value="https://uzman.doktortakvimi.com">Turkey</option>
+                      </select>
   </div>
       </div>
 
@@ -98,23 +118,28 @@
       <img src="image/icon-clinics.svg"class="img3">
       <h1>For clinics</h1>
       <p>Deliver an exceptional patient experience in your clinic</p>
-      <select id="country" name="country"style="margin-bottom:10px ;">
-        <option>2 to 20 specialists</option>
-        <option value="AU">Australia</option>
-        <option value="IN">India</option>
-        <option value="GB">United Kingdom</option>
-        <option value="US">United States</option>
-    </select>
-    <select id="country" name="country" >
-      <option>More than 20 specialists</option>
-      <option value="AU">Australia</option>
-      <option value="IN">India</option>
-      <option value="GB">United Kingdom</option>
-      <option value="US">United States</option>
-  </select>
+      <select data-id="domain-switcher">
+        <option > to 20 specialists</option>
+                          <option value="http://clinicas.doctoralia.com.br/software-de-gestao-para-clinicas-e-centros">Brazil</option>
+                          <option value="http://lekar.znamylekar.cz/pro-zarizeni">Czech</option>
+                          <option value="http://centrimedici.miodottore.it/saas/funzionalita">Italy</option>
+                          <option value="http://clinicas.doctoralia.com.mx/software-gestion-clinicas">Mexico</option>
+                          <option value="http://placowka.znanylekarz.pl/system-od-znanylekarz">Poland</option>
+                          <option value="http://clinicas.doctoralia.es/software-gestion-clinicas">Spain</option>
+                          <option value="http://kurumsal.doktortakvimi.com">Turkey</option>
+                      </select>
+                      <select data-id="domain-switcher">
+                        <option class="text1">More than 20 specialists</option>
+                                          <option value="http://clinicas.doctoralia.com.br/tuotempo">Brazil</option>
+                                          <option value="http://centrimedici.miodottore.it/marketplace/funzionalita">Italy</option>
+                                          <option value="http://clinicas.doctoralia.com.mx/tuotempo">Mexico</option>
+                                          <option value="http://placowka.znanylekarz.pl/poznaj-tuotempo">Poland</option>
+                                          <option value="http://clinicas.doctoralia.es/tuotempo">Spain</option>
+                                      </select>
   </div>
       </div>
     </div>
+    
     <div class="collaboration">
       <h1>We are a global company
         <br>
@@ -181,9 +206,10 @@
             <br>
             healthcare platform</h1>
             <p>
-              We work from 8 offices all over the world, bringing Docplanner Group to life in 13 countries.
+              We work from 8 offices all over the world, bringing Docplanner
+              <br>
+               Group to life in 13 countries.
             </p>
-            <img src="image/icon.png">
         </div>
         <div class="boxitmes">
           <div class="box0">
@@ -228,7 +254,135 @@
           </p>
         </div>
         </div>
-    
+      </div>
+        <header class="offices">
+          <h1>
+            Improve the lives of millions.
+            Change yours forever.
+          </h1>
+          <p>
+            More than 2,200 team mates share our same vision, goals and passion. With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Bologna, Mexico City and Curitiba, our search for great talent never stops.
+          </p>
+        </header>
+
+        
+        <div class="officessl">
+          <div class="office">
+      <a href="/career?&amp;loc=poland#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/warsaw.png" srcset="https://www.docplanner.com/images/warsaw.png 1x, https://www.docplanner.com/images/warsaw@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Warsaw
+          <span class="btn btn--small">See openings</span>
         </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=spain#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/barcelona.png" srcset="https://www.docplanner.com/images/barcelona.png 1x, https://www.docplanner.com/images/barcelona@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Barcelona
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=germany#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/munich.png" srcset="https://www.docplanner.com/images/munich.png 1x, https://www.docplanner.com/images/munich@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Munich
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=turkey#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/istanbul.png" srcset="https://www.docplanner.com/images/istanbul.png 1x, https://www.docplanner.com/images/istanbul@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Istanbul
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=italy#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/rome.png" srcset="https://www.docplanner.com/images/rome.png 1x, https://www.docplanner.com/images/rome@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Rome
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=italy#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/bologna.png" srcset="https://www.docplanner.com/images/bologna.png 1x, https://www.docplanner.com/images/bologna@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Bologna
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=brazil#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/curitiba.png" srcset="https://www.docplanner.com/images/curitiba.png 1x, https://www.docplanner.com/images/curitiba@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Curitiba
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+          <div class="office">
+      <a href="/career?&amp;loc=mexico#jobs-offers" class="office__inner">
+        <figure class="office__image">
+          <img scr="https://www.docplanner.com/images/mexico-city.png" srcset="https://www.docplanner.com/images/mexico-city.png 1x, https://www.docplanner.com/images/mexico-city@2x.png 2x">
+        </figure>
+        <div class="office__desc">
+          Mexico City
+          <span class="btn btn--small">See openings</span>
+        </div>
+      </a>
+    </div>
+    <header class="join-us__header">
+			<h1>
+				Sounds interesting? Join us now!
+			</h1>
+			<a href="/career" class="btn1">See all current openings</a>
+		</header>
+    <footer class="mainfooter">
+	<div class="sectioninner">
+		<p>We are leaders in 13 countries:
+			<a href="https://www.znanylekarz.pl/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Poland</a>, <a href="https://www.doktortakvimi.com/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Turkey</a>,
+			<a href="https://www.doctoralia.es/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Spain</a>,
+			<a href="https://www.miodottore.it/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Italy</a>,
+			<a href="https://www.jameda.de/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Germany</a>,
+			<a href="https://www.znamylekar.cz/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Czech Republic</a>,
+			<a href="//www.doctoralia.com.pt" target="_blank">Portugal</a>,
+			<a href="https://www.doctoralia.com.mx/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Mexico</a>,
+			<a href="https://www.doctoralia.co/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Colombia</a>,
+			<a href="http://www.doctoralia.com.br/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Brazil</a>,
+			<a href="http://www.doctoraliar.com/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Argentina</a>,
+			<a href="http://www.doctoralia.pe/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Peru</a>
+			and
+			<a href="http://www.doctoralia.cl/?__hstc=94104962.83fa0e6b4d51a35f1a476d0dd1bcb263.1657361443297.1657976998676.1657990026536.11&amp;__hssc=94104962.1.1657990026536&amp;__hsfp=2335616057" target="_blank">Chile</a>
+		</p>
+    <br>
+		<p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.</p>
+
+		www.docplanner.com © 2022
+	</div>
+</footer>
  </body>
 </html>
